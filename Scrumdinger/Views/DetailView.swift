@@ -8,9 +8,11 @@
 
 import SwiftUI
 
+
 struct DetailView: View {
     @Binding var scrum: DailyScrum
     @State private var editingScrum = DailyScrum.emptyScrum
+
 
     @State private var isPresentingEditView = false
     
@@ -49,9 +51,11 @@ struct DetailView: View {
                     Label("No meetings yet", systemImage: "calendar.badge.exclamationmark")
                 }
                 ForEach(scrum.history) { history in
-                    HStack {
-                        Image(systemName: "calendar")
-                        Text(history.date, style: .date)
+                    NavigationLink(destination: HistoryView(history: history)) {
+                        HStack {
+                            Image(systemName: "calendar")
+                            Text(history.date, style: .date)
+                        }
                     }
                 }
             }
@@ -84,6 +88,7 @@ struct DetailView: View {
         }
     }
 }
+
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
