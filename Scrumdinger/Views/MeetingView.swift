@@ -8,6 +8,7 @@
 import SwiftUI
 import AVFoundation
 
+
 struct MeetingView: View {
     @Binding var scrum: DailyScrum
     @StateObject var scrumTimer = ScrumTimer()
@@ -20,8 +21,7 @@ struct MeetingView: View {
                 .fill(scrum.theme.mainColor)
             VStack {
                 MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining, theme: scrum.theme)
-                Circle()
-                    .strokeBorder(lineWidth: 24)
+                MeetingTimerView(speakers: scrumTimer.speakers, theme: scrum.theme)
                 MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
         }
@@ -51,6 +51,7 @@ struct MeetingView: View {
         scrum.history.insert(newHistory, at: 0)
     }
 }
+
 
 struct MeetingView_Previews: PreviewProvider {
     static var previews: some View {
