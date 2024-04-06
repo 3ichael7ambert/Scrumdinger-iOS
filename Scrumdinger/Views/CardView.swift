@@ -7,14 +7,13 @@
 
 import SwiftUI
 
-
 struct CardView: View {
     let scrum: DailyScrum
     var body: some View {
         VStack(alignment: .leading) {
             Text(scrum.title)
                 .font(.headline)
-                .accessibilityAddTraits(/*@START_MENU_TOKEN@*/.isHeader/*@END_MENU_TOKEN@*/)
+                .accessibilityAddTraits(.isHeader)
             Spacer()
             HStack {
                 Label("\(scrum.attendees.count)", systemImage: "person.3")
@@ -22,7 +21,7 @@ struct CardView: View {
                 Spacer()
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
                     .accessibilityLabel("\(scrum.lengthInMinutes) minute meeting")
-                    .padding(.trailing, 20)
+                    .labelStyle(.trailingIcon)
             }
             .font(.caption)
         }
@@ -30,7 +29,6 @@ struct CardView: View {
         .foregroundColor(scrum.theme.accentColor)
     }
 }
-
 
 struct CardView_Previews: PreviewProvider {
     static var scrum = DailyScrum.sampleData[0]
@@ -40,3 +38,4 @@ struct CardView_Previews: PreviewProvider {
             .previewLayout(.fixed(width: 400, height: 60))
     }
 }
+

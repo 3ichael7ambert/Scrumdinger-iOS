@@ -9,30 +9,23 @@ import SwiftUI
 
 struct MeetingView: View {
     var body: some View {
-        /*
-         VStack {
-         Image(systemName: "globe")
-         .imageScale(.large)
-         .foregroundStyle(.tint)
-         Text("Hello, world!")
-         }
-         */
-        
         VStack {
             ProgressView(value: 5, total: 15)
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Seconds Elapsed").font(.caption)
+                    Text("Seconds Elapsed")
+                        .font(.caption)
                     Label("300", systemImage: "hourglass.tophalf.fill")
                 }
                 Spacer()
                 VStack(alignment: .trailing) {
-                    Text("Seconds Remaining") .font(.caption)
+                    Text("Seconds Remaining")
+                        .font(.caption)
                     Label("600", systemImage: "hourglass.bottomhalf.fill")
                 }
             }
-            .accessibilityElement(children: /*@START_MENU_TOKEN@*/.ignore/*@END_MENU_TOKEN@*/)
-            .accessibilityLabel("Time Remaining")
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("Time remaining")
             .accessibilityValue("10 minutes")
             Circle()
                 .strokeBorder(lineWidth: 24)
@@ -41,15 +34,20 @@ struct MeetingView: View {
                 Spacer()
                 Button(action: {}) {
                     Image(systemName: "forward.fill")
-                        .accessibilityLabel("Next Speaker")
                 }
-                
+                .accessibilityLabel("Next speaker")
             }
-            .padding()
         }
-        
+        .padding()
     }
 }
+
+struct MeetingView_Previews: PreviewProvider {
+    static var previews: some View {
+        MeetingView()
+    }
+}
+
 
 #Preview {
     MeetingView()
