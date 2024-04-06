@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct ThemePicker: View {
     @Binding var selection: Theme
     
@@ -22,10 +21,8 @@ struct ThemePicker: View {
     }
 }
 
-
 struct ThemePicker_Previews: PreviewProvider {
     static var previews: some View {
         ThemePicker(selection: .constant(.periwinkle))
     }
 }
-

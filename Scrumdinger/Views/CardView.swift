@@ -38,4 +38,3 @@ struct CardView_Previews: PreviewProvider {
             .previewLayout(.fixed(width: 400, height: 60))
     }
 }
-

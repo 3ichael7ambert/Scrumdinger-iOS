@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct ThemeView: View {
     let theme: Theme
     
@@ -20,7 +19,6 @@ struct ThemeView: View {
             .clipShape(RoundedRectangle(cornerRadius: 4))
     }
 }
-
 
 struct ThemeView_Previews: PreviewProvider {
     static var previews: some View {
