@@ -24,6 +24,8 @@
 		0D055A0F2BC1ED5B003F269D /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D055A0E2BC1ED5B003F269D /* NewScrumSheet.swift */; };
 		0D055A112BC1ED88003F269D /* ScrumProgessViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D055A102BC1ED88003F269D /* ScrumProgessViewStyle.swift */; };
 		0D055A132BC1EF23003F269D /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D055A122BC1EF23003F269D /* ScrumStore.swift */; };
+		0D055A152BC1EFFF003F269D /* ErrorWrapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D055A142BC1EFFF003F269D /* ErrorWrapping.swift */; };
+		0D055A172BC1F01C003F269D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D055A162BC1F01C003F269D /* ErrorView.swift */; };
 		0D947F0C2BBFB09C00545EA4 /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D947F0B2BBFB09C00545EA4 /* ScrumdingerApp.swift */; };
 		0D947F0E2BBFB09C00545EA4 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D947F0D2BBFB09C00545EA4 /* MeetingView.swift */; };
 		0D947F102BBFB09D00545EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D947F0F2BBFB09D00545EA4 /* Assets.xcassets */; };
@@ -68,6 +70,8 @@
 		0D055A0E2BC1ED5B003F269D /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		0D055A102BC1ED88003F269D /* ScrumProgessViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumProgessViewStyle.swift; sourceTree = "<group>"; };
 		0D055A122BC1EF23003F269D /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
+		0D055A142BC1EFFF003F269D /* ErrorWrapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapping.swift; sourceTree = "<group>"; };
+		0D055A162BC1F01C003F269D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		0D947F082BBFB09C00545EA4 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D947F0B2BBFB09C00545EA4 /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		0D947F0D2BBFB09C00545EA4 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			children = (
 				0D0559F02BC10F98003F269D /* Theme.swift */,
 				0D055A052BC1EB09003F269D /* ScrumTimer.swift */,
+				0D055A142BC1EFFF003F269D /* ErrorWrapping.swift */,
 				0D0559F22BC1108B003F269D /* DailyScrum.swift */,
 				0D055A072BC1EC43003F269D /* AVPlayer+Ding.swift */,
 				0D055A092BC1EC62003F269D /* History.swift */,
@@ -125,6 +130,7 @@
 				0D0559FD2BC1E4D2003F269D /* DetailEditView.swift */,
 				0D0559FB2BC1DE49003F269D /* DetailView.swift */,
 				0D055A0C2BC1ED29003F269D /* MeetingFooterView.swift */,
+				0D055A162BC1F01C003F269D /* ErrorView.swift */,
 				0D055A032BC1EAAC003F269D /* MeetingHeaderView.swift */,
 				0D947F0D2BBFB09C00545EA4 /* MeetingView.swift */,
 				0D055A0E2BC1ED5B003F269D /* NewScrumSheet.swift */,
@@ -336,6 +342,7 @@
 				0D0559F32BC1108B003F269D /* DailyScrum.swift in Sources */,
 				0D0559FC2BC1DE49003F269D /* DetailView.swift in Sources */,
 				0D055A042BC1EAAC003F269D /* MeetingHeaderView.swift in Sources */,
+				0D055A172BC1F01C003F269D /* ErrorView.swift in Sources */,
 				0D0559FE2BC1E4D2003F269D /* DetailEditView.swift in Sources */,
 				0D055A0D2BC1ED29003F269D /* MeetingFooterView.swift in Sources */,
 				0D055A132BC1EF23003F269D /* ScrumStore.swift in Sources */,
@@ -344,6 +351,7 @@
 				0D055A0F2BC1ED5B003F269D /* NewScrumSheet.swift in Sources */,
 				0D0559F92BC1D7E6003F269D /* ScrumsView.swift in Sources */,
 				0D947F0E2BBFB09C00545EA4 /* MeetingView.swift in Sources */,
+				0D055A152BC1EFFF003F269D /* ErrorWrapping.swift in Sources */,
 				0D055A0A2BC1EC62003F269D /* History.swift in Sources */,
 				0D055A082BC1EC43003F269D /* AVPlayer+Ding.swift in Sources */,
 				0D947F0C2BBFB09C00545EA4 /* ScrumdingerApp.swift in Sources */,
